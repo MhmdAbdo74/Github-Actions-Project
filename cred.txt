@@ -1,0 +1,13 @@
+sonarcloudtoken 
+bd8ec920356749e69fb7571c70c8475dca4af5b9
+
+url
+https://sonarcloud.io
+
+name of organization 
+Hprofile project   
+
+name of project
+hprofile-project
+
+hprofile-project22
