@@ -19,7 +19,7 @@ jobs:
           distribution: 'temurin' # See 'Supported distributions' for available options
           java-version: '11'
       - name: SonarCloud Scan
-        run: mvn -B verify sonar:sonar -Dsonar.projectKey=hprofile-project -Dsonar.sources=src/ -Dsonar.organization=profile-project22 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=hprofile-project  -Dsonar.organization=profile-project22 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
         env:
               GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
               SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
