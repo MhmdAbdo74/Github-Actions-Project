@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
-          java-version: '11'
+          java-version: '17'
       - name: SonarCloud Scan
         run: mvn -B verify sonar:sonar -Dsonar.projectKey=hprofile-project  -Dsonar.organization=profile-project22 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
         env:
